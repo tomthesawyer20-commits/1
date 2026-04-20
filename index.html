@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive webpage for exploring a new scientific theory — principles, concepts, and implications." />
+  <title>New Scientific Theory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="#hero"><span>⚛</span> SciTheory</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#concepts">Key Concepts</a></li>
+        <li><a href="#explorer">Explorer</a></li>
+        <li><a href="#timeline">History</a></li>
+        <li><a href="#feedback" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Hero ────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge">New Scientific Theory</span>
+        <h1 class="hero-title">
+          Rethinking the <span class="highlight">Foundations</span><br/>
+          of Modern Science
+        </h1>
+        <p class="hero-description">
+          A fresh framework that challenges conventional assumptions, unifies
+          disparate observations, and opens new directions for exploration and
+          experimentation.
+        </p>
+        <div class="hero-actions">
+          <a href="#overview" class="btn-primary">Explore the Theory ↓</a>
+          <a href="#feedback" class="btn-secondary">Share Your Feedback</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Core Principles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Testable Predictions</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Fields Unified</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Overview ─────────────────────────────────── -->
+  <section id="overview" aria-label="Theory overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-text" data-fade>
+          <span class="badge">What Is It?</span>
+          <h2 class="section-title">The Core Idea</h2>
+          <p>
+            This theory proposes that [describe your central claim here — e.g.,
+            "information is the fundamental substrate of physical reality, from
+            which energy, matter, and spacetime emerge as higher-order
+            phenomena"].
+          </p>
+          <p>
+            Unlike existing models, it does not require separate postulates for
+            quantum and classical regimes. Instead, a single unifying principle
+            governs behaviour at all scales, making the framework both
+            parsimonious and broadly applicable.
+          </p>
+          <p>
+            The theory makes concrete, falsifiable predictions that distinguish
+            it from competing hypotheses and invites experimental scrutiny.
+          </p>
+          <a href="#concepts" class="btn-primary" style="margin-top: 1rem;">See Key Concepts →</a>
+        </div>
+        <div class="overview-visual" data-fade>
+          <div class="formula-display">E ≡ I · f(Ω)</div>
+          <div class="formula-caption">
+            Central equation — replace with your own formalism
+          </div>
+          <hr style="border-color: var(--color-border); margin: 1.5rem 0;" />
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); text-align: left;">
+            Where <strong style="color: var(--color-text);">I</strong> represents
+            the information content of a system, <strong style="color: var(--color-text);">f</strong> is
+            a transformation function dependent on the system's structural
+            symmetry <strong style="color: var(--color-text);">Ω</strong>, and
+            <strong style="color: var(--color-text);">E</strong> is the observable
+            energy state.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Key Concepts ──────────────────────────────── -->
+  <section id="concepts" aria-label="Key concepts">
+    <div class="container">
+      <span class="badge">Foundations</span>
+      <h2 class="section-title">Key Concepts</h2>
+      <p class="section-subtitle">
+        Click any card to expand it and learn more. Replace these placeholders
+        with your actual theoretical concepts.
+      </p>
+      <div class="concepts-grid">
+
+        <article class="concept-card" tabindex="0" role="button" aria-expanded="false" data-fade>
+          <div class="concept-icon">🔬</div>
+          <div class="concept-title">Concept One</div>
+          <div class="concept-body">
+            A short summary of your first key concept — one or two sentences
+            that give readers an immediate sense of what it is.
+          </div>
+          <div class="concept-detail">
+            A fuller explanation of Concept One. Describe the mechanism, provide
+            an analogy, or outline the mathematical basis. You can include as
+            much depth here as needed for a technically engaged reader.
+          </div>
+          <div class="concept-toggle">Learn more ↓</div>
+        </article>
+
+        <article class="concept-card" tabindex="0" role="button" aria-expanded="false" data-fade>
+          <div class="concept-icon">⚡</div>
+          <div class="concept-title">Concept Two</div>
+          <div class="concept-body">
+            Brief description of your second concept. Why is it necessary for
+            the overall theory? What problem does it solve?
+          </div>
+          <div class="concept-detail">
+            Expanded explanation of Concept Two. Provide the derivation,
+            supporting evidence, or connection to established science that gives
+            this concept its validity.
+          </div>
+          <div class="concept-toggle">Learn more ↓</div>
+        </article>
+
+        <article class="concept-card" tabindex="0" role="button" aria-expanded="false" data-fade>
+          <div class="concept-icon">🌊</div>
+          <div class="concept-title">Concept Three</div>
+          <div class="concept-body">
+            Brief description of your third concept. How does it interact with
+            or emerge from the previous two concepts?
+          </div>
+          <div class="concept-detail">
+            Expanded explanation of Concept Three. Walk through a specific
+            example or thought experiment that illustrates how this concept
+            manifests in observable reality.
+          </div>
+          <div class="concept-toggle">Learn more ↓</div>
+        </article>
+
+        <article class="concept-card" tabindex="0" role="button" aria-expanded="false" data-fade>
+          <div class="concept-icon">🧲</div>
+          <div class="concept-title">Concept Four</div>
+          <div class="concept-body">
+            Brief description of your fourth concept and its role in the
+            broader theoretical framework.
+          </div>
+          <div class="concept-detail">
+            Detailed discussion of Concept Four. What experimental or
+            observational data does it account for that existing theories
+            struggle with?
+          </div>
+          <div class="concept-toggle">Learn more ↓</div>
+        </article>
+
+        <article class="concept-card" tabindex="0" role="button" aria-expanded="false" data-fade>
+          <div class="concept-icon">🔭</div>
+          <div class="concept-title">Concept Five</div>
+          <div class="concept-body">
+            Brief description of your fifth concept. What predictions does it
+            enable that are unique to your theory?
+          </div>
+          <div class="concept-detail">
+            Expanded treatment of Concept Five including the specific, testable
+            predictions it produces and how those differ from the predictions
+            of competing theories.
+          </div>
+          <div class="concept-toggle">Learn more ↓</div>
+        </article>
+
+        <article class="concept-card" tabindex="0" role="button" aria-expanded="false" data-fade>
+          <div class="concept-icon">🌐</div>
+          <div class="concept-title">Concept Six</div>
+          <div class="concept-body">
+            Brief description of your sixth concept and how it rounds out or
+            unifies the framework.
+          </div>
+          <div class="concept-detail">
+            Final synthesis: how Concept Six ties the other five together into
+            a coherent whole, and what open questions remain for future
+            investigation.
+          </div>
+          <div class="concept-toggle">Learn more ↓</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Interactive Explorer ───────────────────────── -->
+  <section id="explorer" aria-label="Interactive theory explorer">
+    <div class="container">
+      <span class="badge">Deep Dive</span>
+      <h2 class="section-title">Theory Explorer</h2>
+      <p class="section-subtitle">
+        Select a topic on the left to explore that aspect of the theory in depth.
+      </p>
+
+      <div class="explorer-layout" data-fade>
+        <div class="explorer-sidebar" role="tablist" aria-label="Theory topics">
+          <div class="explorer-sidebar-title">Topics</div>
+          <button class="explorer-nav-item active" data-target="panel-postulates" role="tab" aria-selected="true">Core Postulates</button>
+          <button class="explorer-nav-item" data-target="panel-math" role="tab" aria-selected="false">Mathematical Framework</button>
+          <button class="explorer-nav-item" data-target="panel-predictions" role="tab" aria-selected="false">Predictions</button>
+          <button class="explorer-nav-item" data-target="panel-compare" role="tab" aria-selected="false">Comparison to Existing Theories</button>
+          <button class="explorer-nav-item" data-target="panel-implications" role="tab" aria-selected="false">Implications</button>
+        </div>
+
+        <div class="explorer-content">
+
+          <div class="explorer-panel active" id="panel-postulates" role="tabpanel">
+            <h3>Core Postulates</h3>
+            <p>
+              Every scientific theory rests on a small set of foundational
+              postulates — statements taken as axioms from which everything else
+              is derived. List yours below.
+            </p>
+            <ol style="color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 2;">
+              <li><strong style="color: var(--color-text);">Postulate 1:</strong> [State your first axiom here]</li>
+              <li><strong style="color: var(--color-text);">Postulate 2:</strong> [State your second axiom here]</li>
+              <li><strong style="color: var(--color-text);">Postulate 3:</strong> [State your third axiom here]</li>
+            </ol>
+            <div class="tag-list">
+              <span class="tag">Axiom</span>
+              <span class="tag">Foundation</span>
+              <span class="tag">First Principles</span>
+            </div>
+          </div>
+
+          <div class="explorer-panel" id="panel-math" role="tabpanel">
+            <h3>Mathematical Framework</h3>
+            <p>
+              The theory is formalised using [describe your mathematical
+              language — e.g., differential geometry, information theory,
+              category theory].
+            </p>
+            <div class="math-block">∂Ψ/∂t = Ĥ · Ψ + Φ(I, Ω)</div>
+            <p>
+              Replace the equation above with your own central governing equation
+              and add a plain-language explanation of each term.
+            </p>
+            <div class="math-block">Ĥ = [your Hamiltonian / operator here]</div>
+            <div class="tag-list">
+              <span class="tag">Equations</span>
+              <span class="tag">Formalism</span>
+              <span class="tag">Derivation</span>
+            </div>
+          </div>
+
+          <div class="explorer-panel" id="panel-predictions" role="tabpanel">
+            <h3>Testable Predictions</h3>
+            <p>
+              A good scientific theory makes predictions that can in principle be
+              falsified. Here are some that distinguish this theory from
+              alternatives:
+            </p>
+            <ul style="color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 2;">
+              <li>Prediction 1: [Observable outcome, experiment, or measurement]</li>
+              <li>Prediction 2: [Observable outcome, experiment, or measurement]</li>
+              <li>Prediction 3: [Observable outcome, experiment, or measurement]</li>
+              <li>Prediction 4: [Observable outcome, experiment, or measurement]</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Falsifiable</span>
+              <span class="tag">Experiment</span>
+              <span class="tag">Observation</span>
+            </div>
+          </div>
+
+          <div class="explorer-panel" id="panel-compare" role="tabpanel">
+            <h3>Comparison to Existing Theories</h3>
+            <p>
+              How does this theory relate to established frameworks? Where does
+              it agree, where does it diverge, and what does it explain that
+              they cannot?
+            </p>
+            <ul style="color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 2;">
+              <li><strong style="color: var(--color-text);">vs. Theory A:</strong> [Agreement / divergence / advantage]</li>
+              <li><strong style="color: var(--color-text);">vs. Theory B:</strong> [Agreement / divergence / advantage]</li>
+              <li><strong style="color: var(--color-text);">vs. Theory C:</strong> [Agreement / divergence / advantage]</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Comparison</span>
+              <span class="tag">Prior Art</span>
+              <span class="tag">Advantages</span>
+            </div>
+          </div>
+
+          <div class="explorer-panel" id="panel-implications" role="tabpanel">
+            <h3>Broader Implications</h3>
+            <p>
+              If the theory is correct, what does it mean for science,
+              technology, philosophy, or society?
+            </p>
+            <ul style="color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 2;">
+              <li>Implication 1: [Describe a consequence for a related field]</li>
+              <li>Implication 2: [Describe a potential technological application]</li>
+              <li>Implication 3: [Describe a philosophical or conceptual consequence]</li>
+            </ul>
+            <div class="tag-list">
+              <span class="tag">Implications</span>
+              <span class="tag">Applications</span>
+              <span class="tag">Philosophy</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Timeline ──────────────────────────────────── -->
+  <section id="timeline" aria-label="Development history">
+    <div class="container">
+      <span class="badge">History</span>
+      <h2 class="section-title">Development Timeline</h2>
+      <p class="section-subtitle">
+        Key milestones in the development of this theory.
+      </p>
+
+      <div class="timeline" data-fade>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Early Stage</div>
+          <div class="timeline-event-title">Initial Insight</div>
+          <div class="timeline-event-body">
+            Describe the observation, experiment, or thought that first
+            suggested the theory was needed. What anomaly or gap in existing
+            knowledge prompted this line of inquiry?
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Development</div>
+          <div class="timeline-event-title">Framework Formulated</div>
+          <div class="timeline-event-body">
+            How was the core framework developed? Who contributed? What
+            mathematical or conceptual tools were brought to bear?
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">First Tests</div>
+          <div class="timeline-event-title">Early Predictions Confirmed</div>
+          <div class="timeline-event-body">
+            Describe the first experimental or observational results that
+            supported the theory. How strong was the evidence?
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Ongoing</div>
+          <div class="timeline-event-title">Open Questions &amp; Future Work</div>
+          <div class="timeline-event-body">
+            What remains to be done? List the open problems, planned
+            experiments, and areas where the theory is still being refined.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Feedback / Contact ─────────────────────────── -->
+  <section id="feedback" aria-label="Feedback and contact">
+    <div class="container">
+      <div class="feedback-wrapper">
+
+        <div class="feedback-info" data-fade>
+          <span class="badge">Get in Touch</span>
+          <h2 class="section-title">Share Your Thoughts</h2>
+          <p>
+            Whether you're a fellow researcher, a curious reader, or a
+            sceptical critic, your feedback is welcome. Use the form to send
+            questions, critiques, or collaboration inquiries.
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <span>your.email@example.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🔗</span>
+              <a href="#">Link to paper / preprint</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🐦</span>
+              <a href="#">@yourhandle</a>
+            </div>
+          </div>
+        </div>
+
+        <div data-fade>
+          <form class="feedback-form" id="feedbackForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fieldName">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="fieldName" name="name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="fieldEmail">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="fieldEmail" name="email" placeholder="you@example.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fieldType">Type of Feedback</label>
+              <select id="fieldType" name="feedback_type">
+                <option value="">Select…</option>
+                <option value="question">Question</option>
+                <option value="critique">Critique / Challenge</option>
+                <option value="support">Supporting Evidence</option>
+                <option value="collaboration">Collaboration Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fieldMessage">Message <span aria-hidden="true">*</span></label>
+              <textarea id="fieldMessage" name="message" placeholder="Your thoughts, questions, or critique…" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message →</button>
+          </form>
+          <div class="form-success" id="formSuccess" aria-live="polite">
+            <span class="checkmark">✅</span>
+            Message received! Thank you for your feedback.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> SciTheory — Built to share and explore a new scientific theory.
+        Replace this text with your own attribution.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ── Toast ──────────────────────────────────────── -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
